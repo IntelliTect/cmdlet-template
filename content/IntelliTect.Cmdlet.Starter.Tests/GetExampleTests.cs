@@ -3,12 +3,12 @@ using Xunit;
 
 namespace IntelliTect.Cmdlet.Starter.Tests
 {
-    public class Cmdlet_Tests
+    public class GetExampleTests
     {
         [Fact]
-        public void NewCmdlet_Test()
+        public void GetExample_Test()
         {
-            var sut = new NewCmdlet();
+            var sut = new GetExample();
 
             Assert.IsAssignableFrom<PSCmdlet>(sut);
         }
