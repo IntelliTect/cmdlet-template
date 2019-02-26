@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>IntelliTect.PowerShell.Cmdlet.Template</id>
+    <version>1.0.0</version>
+    <title>A template for creating tested Powershell cmdlets</title>
+    <authors>IntelliTect</authors>
+    <owners>IntelliTect</owners>
+    <projectUrl>https://github.com/IntelliTect/cmdlet-template</projectUrl>
+    <licenseUrl>https://raw.githubusercontent.com/IntelliTect/cmdlet-template/master/license.txt</licenseUrl>
+    <description>
+From a command prompt, run:
+
+CMD> dotnet new --install IntelliTect.PowerShell.Cmdlet.Template
+
+Make a new folder and open it in a command prompt
+
+CMD> dotnet new pwshcmdlet [-n Optional.Name]
+
+If you don't specify a name, the template will infer one from the name of the folder you are in.
+    </description>
+    <summary>Creates a new solution with a .Net Core 2.2 PowerShell Cmdlet and some Xunit unit tests.</summary>
+    <copyright>© IntelliTect 2019</copyright>
+    <language>en-US</language>
+    <tags>IntelliTect PowerShell Cmdlet Template</tags>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+  </metadata>
+  <files>
+    <file src="content/**" exclude="**\bin\**\*;**\obj\**\*;**\*.user;**\*.lock.json;**\.DS_Store" target="content" />
+  </files>
+</package

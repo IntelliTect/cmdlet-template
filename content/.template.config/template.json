@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "IntelliTect",
+  "classifications": ["PowerShell", "Cmdlet"],
+  "identity": "IntelliTect.PowerShell.Cmdlet.Template",
+  "name": "IntelliTect PowerShell Cmdlet Template",
+  "shortName": "pwshcmdlet",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "IntelliTect.Cmdlet.Starter",
+  "preferNameDirectory": true,
+  "symbols": {
+    "skipRestore": {
+      "type": "parameter",
+      "datatype": "bool",
+      "description": "If specified, skips the automatic restore of the projects on create.",
+      "defaultValue": "false"
+    }
+  },
+  "primaryOutputs": [{
+      "path": "IntelliTect.Cmdlet.Starter\\IntelliTect.Cmdlet.Starter.csproj"
+    },
+    {
+      "path": "IntelliTect.Cmdlet.Starter.Tests\\IntelliTect.Cmdlet.Starter.Tests.csproj"
+    }
+  ],
+  "postActions": [
+    {
+      "condition": "(!skipRestore)",
+      "description": "Restore NuGet packages required by this solution.",
+      "manualInstructions": [{
+        "text": "Run 'dotnet restore'"
+      }],
+      "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+      "continueOnError": true
+    }
+  ]
+}
