@@ -19,13 +19,6 @@
       "defaultValue": "false"
     }
   },
-  "primaryOutputs": [{
-      "path": "IntelliTect.Cmdlet.Starter\\IntelliTect.Cmdlet.Starter.csproj"
-    },
-    {
-      "path": "IntelliTect.Cmdlet.Starter.Tests\\IntelliTect.Cmdlet.Starter.Tests.csproj"
-    }
-  ],
   "postActions": [
     {
       "condition": "(!skipRestore)",

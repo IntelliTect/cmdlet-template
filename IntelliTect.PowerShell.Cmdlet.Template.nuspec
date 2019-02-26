@@ -30,4 +30,4 @@ If you don't specify a name, the template will infer one from the name of the fo
   <files>
     <file src="content/**" exclude="**\bin\**\*;**\obj\**\*;**\*.user;**\*.lock.json;**\.DS_Store" target="content" />
   </files>
-</package
+</package>
