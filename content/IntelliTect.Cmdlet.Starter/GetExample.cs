@@ -5,7 +5,11 @@ namespace IntelliTect.Cmdlet.Starter
     [Cmdlet(VerbsCommon.Get, "Example")]
     public class GetExample : PSCmdlet
     {
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, ValueFromPipeline = true,
+        [Parameter(
+            Mandatory = true,
+            ValueFromPipelineByPropertyName = true,
+            ValueFromPipeline = true,
+            Position = 0,
             HelpMessage = "An example parameter.")]
         [Alias("Name", "Filter")]
         public string[] Path { get; set; }
