@@ -1,4 +1,2 @@
-name: 'IntelliTect-Cmdlet-Template-Nuget'
+name: 1.0.{build}
 
-pool:
-  vmImage: 'Hosted VS2017'
