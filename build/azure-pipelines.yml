@@ -1,2 +1,7 @@
 name: 1.0.{build}
 
+jobs:
+  - job: 'publish'
+    displayName: 'Pack & Publish to NuGet'
+
+
