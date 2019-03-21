@@ -13,4 +13,5 @@ This project produces a C# template for creating PowerShell cmdlets with unit te
 * Apache 2.0, see [LICENSE](https://github.com/IntelliTect/cmdlet-template/blob/master/license.txt) file
 
 ## Build Status 
-* Version X.Y
+* Azure DevOps: [![Build Status](https://intellitect.visualstudio.com/IntelliTect/_apis/build/status/IntelliTect-Cmdlet-Template-Pack?branchName=master)](https://intellitect.visualstudio.com/IntelliTect/_build/latest?definitionId=61&branchName=master)
+* Nuget: 
