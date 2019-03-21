@@ -1,15 +1,13 @@
-trigger:
-  branches:
-    include:
-    - refs/tags/*
+variables: 
+  - PackageVersion: 1.0.0
 
 steps:
 - task: NuGetCommand@2
   inputs:
     command: pack
     packagesToPack: IntelliTect.PowerShell.Cmdlet.Template.nuspec
-    versioningScheme: byBuildNumber
-    versionEnvVar: $(Build.SourceBranchName)
+    versioningScheme: byEnvVar
+    versionEnvVar: PackageVersion
 
 
 
