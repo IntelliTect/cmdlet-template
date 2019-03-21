@@ -9,6 +9,9 @@ steps:
     packagesToPack: IntelliTect.PowerShell.Cmdlet.Template.nuspec
     versioningScheme: byEnvVar
     versionEnvVar: PackageVersion
-
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    artifactName: drop
 
 
