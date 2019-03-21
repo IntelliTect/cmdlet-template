@@ -1,7 +1,15 @@
-name: 1.0.{build}
+trigger:
+  branches:
+    include:
+    - refs/tags/*
 
-jobs:
-  - job: 'publish'
-    displayName: 'Pack & Publish to NuGet'
+steps:
+- task: NuGetCommand@2
+  inputs:
+    command: pack
+    packagesToPack: IntelliTect.PowerShell.Cmdlet.Template.nuspec
+    versioningScheme: byBuildNumber
+    versionEnvVar: $(Build.SourceBranchName)
+
 
 
