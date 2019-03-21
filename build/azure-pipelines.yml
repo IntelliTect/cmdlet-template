@@ -1,5 +1,6 @@
 variables: 
-  - PackageVersion: 1.0.0
+  - name: PackageVersion
+    value: 1.0.0
 
 steps:
 - task: NuGetCommand@2
