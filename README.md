@@ -4,7 +4,7 @@ This project produces a C# template for creating PowerShell cmdlets with unit te
 
 ## Installation
 * Run
-  ``CMD> dotnet new --install IntelliTect.Coalesce.KnockoutJS.Template``
+  ``CMD> dotnet new --install IntelliTect.PowerShell.Cmdlet.Template``
 * Make a new folder and open in you favorite shell
 * Run 
   ``CMD> dotnet new pwshcmdlet``
